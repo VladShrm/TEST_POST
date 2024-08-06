@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #000000;
+        border-radius: 50px;
+        border: 1px solid rgb(117, 117, 117);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #676767;
+        border-radius: 50px;
+    }
+}
+
+html,
+body {
+    @apply bg-black
+}
